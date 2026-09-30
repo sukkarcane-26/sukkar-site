@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Sukkar | Sugar Cane Juice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="#/" aria-label="Sukkar home"><img alt="Sukkar" src="images/sukkar.png"></a>
+<button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+<ul id="menu"><li><a href="#/" data-r="home">Home</a></li><li><a href="#/about" data-r="about">About Us</a></li><li><a href="#/book" data-r="book">Book Us</a></li><li><a href="#/events" data-r="events">Events</a></li><li><a href="#/contact" data-r="contact">Contact</a></li></ul></div></nav>
+
+<main class="wrap">
+<div class="page on" id="p-home">
+<div class="hero">
+<div><h1>Sugarcane juice, served cold.</h1><p>Come find us at a pop-up, or have us pour at your wedding or party.</p>
+<a class="btn" href="#/book">Book an event</a><a class="txt" href="#/menu">See the menu</a></div>
+<div class="hero-art">
+<figure class="lit tents" id="marketFig" data-lit="false" style="margin:0 auto;max-width:1000px">
+<img src="images/drawing-of-a-market-with-rows-of-tents-s.webp" alt="Drawing of a market with rows of tents, shoppers and a Sukkar stand" width="1500" height="985">
+<svg id="tentSvg" viewBox="262 417 2106 1384" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+<defs><radialGradient id="hg"><stop offset="0" stop-color="#f2dc55" stop-opacity=".7"/><stop offset=".45" stop-color="#f2dc55" stop-opacity=".28"/><stop offset="1" stop-color="#f2dc55" stop-opacity="0"/></radialGradient></defs>
+<g id="wires"></g><g id="bulbs"></g>
+</svg>
+</figure>
+
+<div class="lightrow" style="margin-top:16px"><button class="lightbtn" type="button" aria-pressed="false" data-target="marketFig"><span class="switch" aria-hidden="true"><span class="knob"></span></span><span class="lbl">Turn on the market lights</span></button></div>
+</div></div>
+
+<section style="padding-top:40px"><div class="gal">
+<img alt="Juice being poured into a clear cup" src="images/juice-being-poured-into-a-clear-cup.jpg">
+<img alt="Chalkboard menu sign with prices and flavors" src="images/chalkboard-menu-sign-with-prices-and-fla.jpg">
+<img alt="Two people in Sukkar aprons, one holding a cup" src="images/two-people-in-sukkar-aprons-one-holding-.jpg">
+<img alt="Cut sugarcane stalks in a cooler" src="images/cut-sugarcane-stalks-in-a-cooler.jpg">
+<img alt="A lemon half and ginger on a cutting board" src="images/a-lemon-half-and-ginger-on-a-cutting-boa.jpg">
+<img alt="Marking a cup at the Sukkar booth" src="images/marking-a-cup-at-the-sukkar-booth.jpg"></div></section>
+
+<section id="s-menu">
+<h2>The menu</h2>
+<p class="lead">One drink, your way. Choose your ice and add a flavor if you like.</p>
+<div class="builder">
+<svg class="cup" viewBox="0 0 120 190" role="img" aria-label="Your cup">
+<defs><clipPath id="c"><path d="M14 36 L106 36 L96 180 Q95 186 88 186 L32 186 Q25 186 24 180 Z"/></clipPath></defs>
+<g clip-path="url(#c)"><rect id="liq" x="0" y="80" width="120" height="120" fill="#e6ecb0" style="transition:y .5s"/>
+<g id="ice" fill="#fff" fill-opacity=".7" stroke="#56761a" stroke-width="1.5"><rect class="cube" x="30" y="92" width="22" height="22" rx="4" transform="rotate(-12 41 103)"/><rect class="cube" x="62" y="100" width="22" height="22" rx="4" transform="rotate(10 73 111)"/><rect class="cube" x="40" y="130" width="22" height="22" rx="4" transform="rotate(8 51 141)"/><rect class="cube" x="70" y="140" width="22" height="22" rx="4" transform="rotate(-8 81 151)"/></g>
+<circle id="f-lemon" cx="38" cy="66" r="10" fill="#f6e04a" stroke="#56761a" stroke-width="1.5" opacity="0"/>
+<g id="f-mint" opacity="0" fill="#56761a"><ellipse cx="72" cy="66" rx="9" ry="5" transform="rotate(-30 72 66)"/><ellipse cx="84" cy="70" rx="9" ry="5" transform="rotate(25 84 70)"/></g>
+<rect id="f-ginger" x="54" y="118" width="18" height="10" rx="5" fill="#e0c088" stroke="#56761a" stroke-width="1.5" opacity="0"/></g>
+<path d="M14 36 L106 36 L96 180 Q95 186 88 186 L32 186 Q25 186 24 180 Z" fill="none" stroke="#56761a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M8 33 L112 33" stroke="#56761a" stroke-width="3" stroke-linecap="round"/><path d="M78 30 L92 2" stroke="#56761a" stroke-width="4" stroke-linecap="round"/></svg>
+<form id="bf" onsubmit="return false">
+<fieldset><legend>Ice</legend><div class="opts">
+<label><input type="radio" name="ice" value="10" data-lv="82" data-cubes="4" checked><span>Original $10</span></label>
+<label><input type="radio" name="ice" value="11" data-lv="66" data-cubes="2"><span>Less ice $11</span></label>
+<label><input type="radio" name="ice" value="12" data-lv="52" data-cubes="0"><span>No ice (still cold) $12</span></label></div></fieldset>
+<fieldset><legend>Flavor, $0.50 each</legend><div class="opts">
+<label><input type="checkbox" value="lemon"><span>Lemon</span></label>
+<label><input type="checkbox" value="mint"><span>Mint</span></label>
+<label><input type="checkbox" value="ginger"><span>Ginger</span></label></div></fieldset>
+<div class="total" aria-live="polite">Subtotal <span id="sub"></span>, tax (6%) <span id="tax"></span><b id="tot"></b></div>
+</form></div>
+</section>
+
+
+<section style="padding-top:56px"><div class="split">
+<div><h2>Your event, our cart</h2>
+<p class="lead">Weddings, birthdays, and gatherings. Send us your date and guest count and we&#39;ll reply with a quote.</p>
+<a class="btn" style="margin-top:6px" href="https://docs.google.com/forms/d/e/1FAIpQLSfrGeGxl4KMEWoAb-V-hpmVdmz5qJrTbn2OEUDk4LXQLw0EuQ/viewform?usp=header" target="_blank" rel="noopener">Inquire here</a>
+</div>
+<img alt="Sukkar logo poster hung on a wooden crate at a booth" src="images/sukkar-logo-poster-hung-on-a-wooden-crat.jpg" style="width:100%;height:auto;border-radius:4px;display:block">
+</div></section>
+</div>
+
+<div class="page" id="p-about">
+<div class="head"><h1>Our Story</h1></div>
+
+<section class="story-split">
+<div class="story-media"><img src="images/three-cups-of-iced-sugarcane-juice-garni.jpg" alt="Three cups of iced sugarcane juice garnished with mint, lemon, and ginger"></div>
+<div class="story-text">
+<h2>The Beginning</h2>
+<p>I grew up in Egypt, and sugarcane juice was just part of life there. You&#39;d see a vendor on almost every corner with a press, and they&#39;d hand you a cup, or just a plastic bag with a straw in it, and that was your drink. It wasn&#39;t a treat, it was normal. I didn&#39;t think twice about it until I moved to the US and realized I couldn&#39;t find it anywhere. Not at a grocery store, not at a juice bar, nowhere. I looked for a long time.</p>
+<p>Eventually I stopped looking and decided to just make it myself. I found a press, figured out how to source good cane, and started setting up a pop-up, not knowing if anyone outside of Egypt would even want to try it. People lined up. A few of them told me &quot;it tastes like back home, and even better,&quot; and that&#39;s when I knew this was worth doing for real.</p>
+</div>
+</section>
+
+<section class="story-split reverse">
+<div class="story-text">
+<h2>Our Mission</h2>
+<p>Everything I sell is pressed fresh, right there at the pop-up, in front of you. No concentrate, no shortcuts, nothing sitting in a bottle for weeks. Since this is still a very new business, I press every stalk myself, and honestly I like it that way. It keeps me close to the product and close to the people buying it.</p>
+<p>My goal has never been complicated. I want to make the best sugarcane juice you can get outside of Egypt, and I want it to give someone a taste of home, whether that home is Egypt, Pakistan, or somewhere else entirely. This is still the beginning for us, just me and a pop-up, and I&#39;m building it one event at a time. Wherever it grows from here, I want it to keep feeling like the same thing it started as: something simple, something real, and something that makes your day a little sweeter.</p>
+</div>
+<div class="story-media"><img src="images/sunset-over-the-mountains.jpg" alt="Sunset over the mountains"></div>
+</section>
+</div>
+
+<div class="page" id="p-book">
+<div class="head"><h1>Book Us</h1></div>
+<section style="border:0;padding-top:16px"><div class="split">
+<div><p class="lead">Weddings, birthdays, and gatherings. Send us your date and guest count and we&#39;ll reply with a quote.</p>
+<a class="btn" style="margin-top:6px" href="https://docs.google.com/forms/d/e/1FAIpQLSfrGeGxl4KMEWoAb-V-hpmVdmz5qJrTbn2OEUDk4LXQLw0EuQ/viewform?usp=header" target="_blank" rel="noopener">Inquire here</a>
+</div>
+<div style="text-align:center">
+<figure class="lit art" id="standFig" data-lit="false" style="margin:0">
+<img src="images/drawing-of-the-sukkar-juice-stand-under-.webp" alt="Drawing of the Sukkar juice stand under its tent, with string lights and the Sukkar logo on the front counter" width="1300" height="1208">
+<img class="glow" src="images/glow.webp" alt="" aria-hidden="true" width="1300" height="1208">
+</figure>
+<div class="lightrow" style="margin-top:16px;justify-content:center;display:flex"><button class="lightbtn" type="button" aria-pressed="false" data-target="standFig"><span class="switch" aria-hidden="true"><span class="knob"></span></span><span class="lbl">Turn on the stand lights</span></button></div>
+</div>
+</div></section>
+</div>
+
+<div class="page" id="p-events">
+<div class="head"><h1>Events</h1><p class="lead" style="margin-top:12px">Find the Sukkar cart at a pop-up near you. Dates are also posted on Instagram, @sukkar.cane.</p></div>
+<section style="border:0;padding-top:16px"><div class="cal">
+<div class="calbar"><button id="prev" aria-label="Previous month">&#8249;</button><h2 id="mt"></h2><button id="next" aria-label="Next month">&#8250;</button></div>
+<div class="days" id="grid"></div></div>
+<div class="evl" id="evl" aria-live="polite"></div></section>
+</div>
+
+<div class="page" id="p-contact">
+<div class="head"><h1>Contact us</h1><p class="lead" style="margin-top:12px">Send us a message and we'll get back to you. For weddings and parties, use the booking form below.</p></div>
+<section style="border:0;padding-top:16px">
+<form class="cform" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="cf">
+<input type="hidden" name="form-name" value="contact">
+<p hidden><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label>Message<textarea name="message" rows="5" required></textarea></label>
+<button class="btn" type="submit">Send message</button>
+<p id="cfm" role="status"></p></form>
+</section></div>
+
+<div class="page" id="p-privacy">
+<div class="head"><h1>Privacy policy</h1><p style="margin:12px 0 0">Last updated September 27, 2026</p></div>
+<section class="prose" style="border:0;padding-top:16px">
+<p>This policy explains what happens with your information when you use this website. Sukkar LLC ("Sukkar," "we") keeps things simple.</p>
+<h2>What we collect</h2><p>This website does not have accounts, and it does not track you. We only receive what you choose to send us: your name, email, and message if you use the contact form, or your name, contact information, event date, and guest count if you fill out the booking form.</p>
+<h2>How we use it</h2><p>We use what you send only to reply to you, prepare a quote, and plan your event. We don't sell your information.</p>
+<h2>Third-party services</h2>
+<ul><li>Our hosting provider (Netlify) processes contact form messages and delivers them to our email. Google Forms handles booking requests, and Google Fonts loads our typeface. Google may receive technical data such as your IP address. See Google's privacy policy.</li>
+<li>Links to Instagram and TikTok take you to those platforms, which have their own privacy policies.</li></ul>
+<h2>Cookies</h2><p>We don't set cookies or run analytics on this site. Third-party services above may set their own.</p>
+<h2>Your choices</h2><p>You can ask us to update or delete the details you sent us by messaging @sukkar.cane on Instagram.</p>
+<h2>Children</h2><p>This site is not directed at children under 13, and we don't knowingly collect their information.</p>
+<h2>Changes</h2><p>If this policy changes, we'll update the date at the top of this page.</p>
+<h2>Contact</h2><p>Questions? Message us on Instagram at @sukkar.cane.</p>
+</section></div>
+</main>
+
+<footer><div class="wrap"><span>&copy; <span id="yr">2026</span> Sukkar LLC. All rights reserved.</span><span class="ficons"><a href="https://instagram.com/sukkar.cane" target="_blank" rel="noopener" aria-label="Sukkar on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg></a><a href="https://tiktok.com/@sukkar.cane" target="_blank" rel="noopener" aria-label="Sukkar on TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a href="mailto:sukkarjuice@gmail.com" aria-label="Email Sukkar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.6"/><path d="M4 7.6l8 6 8-6"/></svg></a></span><span><a href="#/privacy">Privacy policy</a> &nbsp;·&nbsp; <a href="#/contact">Contact</a></span></div></footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
