@@ -1,6 +1,6 @@
 (function(){
 // EVENTS: add dates here, e.g. {date:'2026-10-18',title:'Souq Social',place:'Location',time:'12-6 pm'}
-var EVENTS=[];
+var EVENTS=[{date:'2026-10-10',title:"ADAM's Center"},{date:'2026-10-17',title:'Souq Social'}];
 var $=function(s){return document.querySelector(s)},$$=function(s){return [].slice.call(document.querySelectorAll(s))};
 $('#yr').textContent=new Date().getFullYear();
 /* menu + routing */
