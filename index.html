@@ -104,7 +104,6 @@
 <section style="border:0;padding-top:16px"><div class="split book-split">
 <div>
 <h2>Bring Sukkar to your next event</h2>
-<p class="lead">Weddings, birthdays, and gatherings — we bring the press, the stand, and fresh sugarcane juice straight to you.</p>
 <form class="bform" id="bkf">
 <p class="lead" style="margin-bottom:30px">Ready to book? Fill out the form below with as much detail as possible and we&#39;ll follow up with a custom quote within 24 hours.</p>
 <input type="hidden" name="access_key" value="1eb2e56b-c812-42bb-b747-fa615064ba4f">
@@ -112,12 +111,10 @@
 <input type="hidden" name="from_name" value="Sukkar Booking Form">
 <p hidden><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
-<h3>Contact information</h3>
-<label>Full name<input name="name" required autocomplete="name"></label>
-<label>Email address<input type="email" name="email" required autocomplete="email"></label>
+<label>Full name <span class="req">*</span><input name="name" required autocomplete="name"></label>
+<label>Email address <span class="req">*</span><input type="email" name="email" required autocomplete="email"></label>
 
-<h3>Event details</h3>
-<fieldset><legend>Type of event *</legend><div class="opts">
+<fieldset><legend>Type of event <span class="req">*</span></legend><div class="opts">
 <label><input type="checkbox" name="event_type" value="Wedding"><span>Wedding</span></label>
 <label><input type="checkbox" name="event_type" value="Engagement Party"><span>Engagement Party</span></label>
 <label><input type="checkbox" name="event_type" value="Baby Shower"><span>Baby Shower</span></label>
@@ -128,15 +125,15 @@
 <label>If other, please specify<input name="event_type_other" autocomplete="off"></label>
 
 <div class="row3">
-<label>Event date<input type="date" name="event_date" required></label>
-<label>Start time<input type="time" name="start_time" required></label>
-<label>End time<input type="time" name="end_time" required></label>
+<label>Event date <span class="req">*</span><input type="date" name="event_date" required></label>
+<label>Start time <span class="req">*</span><input type="time" name="start_time" required></label>
+<label>End time <span class="req">*</span><input type="time" name="end_time" required></label>
 </div>
 
-<label>Event address<input name="event_address" required autocomplete="street-address"></label>
-<label>Estimated number of guests<input type="number" name="guest_count" min="1" required></label>
+<label>Event address <span class="req">*</span><input name="event_address" required autocomplete="street-address"></label>
+<label>Estimated number of guests <span class="req">*</span><input type="number" name="guest_count" min="1" required></label>
 
-<label>Will the event be indoors or outdoors?
+<label>Will the event be indoors or outdoors? <span class="req">*</span>
 <select name="setting" required>
 <option value="" disabled selected hidden>Choose</option>
 <option value="Indoors (power outlet provided)">Indoors (power outlet provided)</option>
@@ -144,13 +141,19 @@
 <option value="Outdoors (generator needed)">Outdoors (generator needed)</option>
 </select></label>
 
-<fieldset><legend>How many hours would you like us to serve? *</legend><div class="opts">
+<fieldset><legend>How many hours would you like us to serve? <span class="req">*</span></legend><div class="opts">
 <label><input type="radio" name="service_hours" value="1–2 Hours" required><span>1–2 Hours</span></label>
 <label><input type="radio" name="service_hours" value="2–4 Hours"><span>2–4 Hours</span></label>
 <label><input type="radio" name="service_hours" value="4+ Hours"><span>4+ Hours</span></label>
 </div></fieldset>
 
-<label>What&#39;s your budget? <span class="opt">(optional)</span><input name="budget" autocomplete="off"></label>
+<fieldset><legend>Add-ons / additional services</legend><div class="opts">
+<label><input type="checkbox" name="addons" value="Custom stickers on cups"><span>Custom stickers on cups</span></label>
+<label><input type="checkbox" name="addons" value="Other"><span>Other</span></label>
+</div></fieldset>
+<label>If other, please specify<input name="addons_other" autocomplete="off"></label>
+
+<label>What&#39;s your budget? <span class="req">*</span><input name="budget" required autocomplete="off"></label>
 <label>Tell us anything else about your event or special requests <span class="opt">(optional)</span><textarea name="message" rows="4"></textarea></label>
 
 <button class="btn" type="submit">Request a quote</button>

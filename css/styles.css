@@ -56,7 +56,7 @@ legend{font-weight:600;font-size:15px;margin-bottom:10px;padding:0}
 .split{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
 .book-split{align-items:start}
 .book-art{position:sticky;top:calc(76px + env(safe-area-inset-top,0px) + 32px)}
-@media(max-width:760px){.book-art{position:static}}
+@media(max-width:760px){.book-art{position:static}.bform{padding:24px}}
 .row{display:flex;justify-content:space-between;gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}
 .row:first-of-type{border-top:1px solid var(--line)}
 .row b{font-weight:600}.row span{max-width:40ch;text-align:right}
@@ -81,11 +81,10 @@ legend{font-weight:600;font-size:15px;margin-bottom:10px;padding:0}
 .cform input,.cform textarea{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid #a9bd7c;border-radius:4px;font:400 16px Montserrat,system-ui,sans-serif;color:var(--ink);background:#fff}
 .cform input:focus,.cform textarea:focus{outline:3px solid #f2dc55;outline-offset:1px;border-color:var(--green)}
 #cfm{margin:14px 0 0;font-size:15px;min-height:1.7em}
-.bform{max-width:640px;margin:28px 0 56px}
-.bform h3{font-size:19px;margin:34px 0 18px;padding-top:22px;border-top:1px solid var(--line)}
-.bform h3:first-of-type{margin-top:0;padding-top:0;border-top:0}
+.bform{max-width:640px;margin:28px 0 56px;background:#eef3e3;border:1px solid var(--line);border-radius:12px;padding:36px}
 .bform label{display:block;font-weight:600;font-size:15px;margin-bottom:18px}
 .bform .opt{font-weight:400;color:#6b7a52}
+.bform .req{color:#a4342a}
 .bform input:not([type=checkbox]):not([type=radio]),.bform textarea,.bform select{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid #a9bd7c;border-radius:4px;font:400 16px Montserrat,system-ui,sans-serif;color:var(--ink);background:#fff}
 .bform select{appearance:none;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9"><path d="M1 1l6 6 6-6" fill="none" stroke="%2356761a" stroke-width="2"/></svg>');background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
 .bform input:not([type=checkbox]):not([type=radio]):focus,.bform textarea:focus,.bform select:focus{outline:3px solid #f2dc55;outline-offset:1px;border-color:var(--green)}
