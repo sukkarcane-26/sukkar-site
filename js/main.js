@@ -48,6 +48,24 @@ fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlenco
 .then(function(r){if(!r.ok)throw 0;cf.reset();msg.textContent='Thank you! We got your message and will reply soon.'})
 .catch(function(){msg.innerHTML='Sorry, that didn\'t send. Please message us on Instagram, @sukkar.cane.'})});
 
+var bkf=$('#bkf');
+if(bkf){
+bkf.addEventListener('submit',function(ev){
+ev.preventDefault();
+var boxes=bkf.querySelectorAll('input[name="event_type"]:checked');
+var etmsg=$('#etmsg');
+if(!boxes.length){etmsg.hidden=false;etmsg.scrollIntoView({block:'center',behavior:'smooth'});return}
+etmsg.hidden=true;
+var fd=new FormData(bkf),obj={};
+fd.forEach(function(v,k){if(k==='event_type'){obj.event_type=(obj.event_type?obj.event_type+', ':'')+v}else{obj[k]=v}});
+var msg=$('#bkm');msg.textContent='Sending...';
+fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(obj)})
+.then(function(r){return r.json()})
+.then(function(data){if(!data.success)throw 0;bkf.reset();msg.textContent='Thank you! We got your request and will reply with a quote soon.'})
+.catch(function(){msg.innerHTML='Sorry, that didn\'t send. Please message us on Instagram, @sukkar.cane.'})
+});
+}
+
 /* interactive lights (stand + market tents), with a twinkle sound */
 var ctxA=null,masterA=null;
 function twAudio(){

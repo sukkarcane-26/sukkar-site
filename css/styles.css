@@ -79,6 +79,20 @@ legend{font-weight:600;font-size:15px;margin-bottom:10px;padding:0}
 .cform input,.cform textarea{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid #a9bd7c;border-radius:4px;font:400 16px Montserrat,system-ui,sans-serif;color:var(--ink);background:#fff}
 .cform input:focus,.cform textarea:focus{outline:3px solid #f2dc55;outline-offset:1px;border-color:var(--green)}
 #cfm{margin:14px 0 0;font-size:15px;min-height:1.7em}
+.bform{max-width:640px;margin:0 auto 56px}
+.bform h3{font-size:19px;margin:34px 0 18px;padding-top:22px;border-top:1px solid var(--line)}
+.bform h3:first-of-type{margin-top:0;padding-top:0;border-top:0}
+.bform label{display:block;font-weight:600;font-size:15px;margin-bottom:18px}
+.bform .opt{font-weight:400;color:#6b7a52}
+.bform input:not([type=checkbox]):not([type=radio]),.bform textarea,.bform select{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid #a9bd7c;border-radius:4px;font:400 16px Montserrat,system-ui,sans-serif;color:var(--ink);background:#fff}
+.bform select{appearance:none;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="9"><path d="M1 1l6 6 6-6" fill="none" stroke="%2356761a" stroke-width="2"/></svg>');background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+.bform input:not([type=checkbox]):not([type=radio]):focus,.bform textarea:focus,.bform select:focus{outline:3px solid #f2dc55;outline-offset:1px;border-color:var(--green)}
+.bform .opts label{margin-bottom:0;font-weight:400}
+.bform fieldset{margin-bottom:22px}
+.bform .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.fmsg{color:#a4342a;font-size:14px;margin:-8px 0 18px}
+#bkm{margin:14px 0 0;font-size:15px;min-height:1.7em}
+@media (max-width:760px){.bform .row3{grid-template-columns:1fr}}
 footer{border-top:1px solid var(--line);padding:32px 0 56px;font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
 footer a{color:var(--ink)}
