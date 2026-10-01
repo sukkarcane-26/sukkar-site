@@ -14,6 +14,7 @@ $$('.page').forEach(function(p){p.classList.toggle('on',p.id==='p-'+page)});
 $$('nav ul a').forEach(function(a){a.classList.toggle('on',a.dataset.r===page)});
 closeMenu();
 if(page==='home'&&sec[r]){var e=document.getElementById('s-'+r);if(e)e.scrollIntoView()}else window.scrollTo(0,0);
+if(page==='home'&&!sec[r]&&location.hash)history.replaceState(null,'',location.pathname+location.search);
 }
 window.addEventListener('hashchange',route);route();
 /* cup builder */
